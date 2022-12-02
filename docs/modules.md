@@ -25,7 +25,7 @@
 
 #### Defined in
 
-types.ts:3
+[types.ts:3](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L3)
 
 ## Functions
 
@@ -45,7 +45,7 @@ types.ts:3
 
 #### Defined in
 
-utils.ts:3
+[utils.ts:3](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/utils.ts#L3)
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 #### Defined in
 
-utils.ts:11
+[utils.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/utils.ts#L11)

@@ -14,7 +14,7 @@
 
 #### Defined in
 
-replicate-api.ts:13
+[replicate-api.ts:13](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L13)
 
 ## Properties
 
@@ -24,7 +24,7 @@ replicate-api.ts:13
 
 #### Defined in
 
-replicate-api.ts:10
+[replicate-api.ts:10](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L10)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-replicate-api.ts:11
+[replicate-api.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L11)
 
 ## Methods
 
@@ -61,7 +61,7 @@ replicate-api.ts:11
 
 #### Defined in
 
-replicate-api.ts:369
+[replicate-api.ts:369](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L369)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-replicate-api.ts:375
+[replicate-api.ts:375](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L375)
 
 ___
 
@@ -110,7 +110,7 @@ Cancels an existing prediction.
 
 #### Defined in
 
-replicate-api.ts:222
+[replicate-api.ts:222](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L222)
 
 ___
 
@@ -138,7 +138,7 @@ status until the prediction either resolves or times out.
 
 #### Defined in
 
-replicate-api.ts:125
+[replicate-api.ts:125](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L125)
 
 ___
 
@@ -166,7 +166,7 @@ or times out.
 
 #### Defined in
 
-replicate-api.ts:280
+[replicate-api.ts:280](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L280)
 
 ___
 
@@ -191,7 +191,7 @@ Creates a new prediction from a specific version of a model.
 
 #### Defined in
 
-replicate-api.ts:105
+[replicate-api.ts:105](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L105)
 
 ___
 
@@ -216,7 +216,7 @@ Creates a new training session.
 
 #### Defined in
 
-replicate-api.ts:260
+[replicate-api.ts:260](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L260)
 
 ___
 
@@ -238,7 +238,7 @@ Fetches a model.
 
 #### Defined in
 
-replicate-api.ts:34
+[replicate-api.ts:34](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L34)
 
 ___
 
@@ -260,7 +260,7 @@ Fetches a collection of models.
 
 #### Defined in
 
-replicate-api.ts:72
+[replicate-api.ts:72](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L72)
 
 ___
 
@@ -283,7 +283,7 @@ Fetches a specific version of a model.
 
 #### Defined in
 
-replicate-api.ts:60
+[replicate-api.ts:60](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L60)
 
 ___
 
@@ -307,7 +307,7 @@ Fetches a list of model versions for a given model.
 
 #### Defined in
 
-replicate-api.ts:41
+[replicate-api.ts:41](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L41)
 
 ___
 
@@ -329,7 +329,7 @@ Fetches a prediction.
 
 #### Defined in
 
-replicate-api.ts:83
+[replicate-api.ts:83](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L83)
 
 ___
 
@@ -352,7 +352,7 @@ Fetches a list of predictions.
 
 #### Defined in
 
-replicate-api.ts:90
+[replicate-api.ts:90](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L90)
 
 ___
 
@@ -374,7 +374,7 @@ Fetches a training session.
 
 #### Defined in
 
-replicate-api.ts:253
+[replicate-api.ts:253](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L253)
 
 ___
 
@@ -400,7 +400,7 @@ Polls the status of a prediction until it either resolves or times out.
 
 #### Defined in
 
-replicate-api.ts:156
+[replicate-api.ts:156](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L156)
 
 ___
 
@@ -426,7 +426,7 @@ Polls the status of a training session until it resolves or times out.
 
 #### Defined in
 
-replicate-api.ts:311
+[replicate-api.ts:311](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L311)
 
 ___
 
@@ -449,4 +449,4 @@ Uploads a blob of data using Replicate's AWS S3 wrapper.
 
 #### Defined in
 
-replicate-api.ts:229
+[replicate-api.ts:229](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L229)

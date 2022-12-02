@@ -12,7 +12,7 @@
 
 #### Defined in
 
-replicate-api.ts:386
+[replicate-api.ts:386](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L386)
 
 ## Properties
 
@@ -22,4 +22,4 @@ replicate-api.ts:386
 
 #### Defined in
 
-replicate-api.ts:384
+[replicate-api.ts:384](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/replicate-api.ts#L384)

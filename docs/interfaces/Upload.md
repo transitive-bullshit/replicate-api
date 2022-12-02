@@ -6,7 +6,7 @@
 
 #### Defined in
 
-types.ts:60
+[types.ts:60](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L60)
 
 ___
 
@@ -16,4 +16,4 @@ ___
 
 #### Defined in
 
-types.ts:59
+[types.ts:59](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L59)

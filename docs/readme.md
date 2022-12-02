@@ -1,8 +1,8 @@
-# Replicate AI API <!-- omit in toc -->
+# Replicate API <!-- omit in toc -->
 
-> TS wrapper around Replicate's machine learning model API.
+> Node.js wrapper around Replicate's ML API (including dreambooth + stable diffusion).
 
-[![Build Status](https://github.com/transitive-bullshit/replicate-ai-api/actions/workflows/test.yml/badge.svg)](https://github.com/transitive-bullshit/replicate-ai-api/actions/workflows/test.yml) [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/transitive-bullshit/replicate-ai-api/blob/main/license) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
+[![Build Status](https://github.com/transitive-bullshit/replicate-api/actions/workflows/test.yml/badge.svg)](https://github.com/transitive-bullshit/replicate-api/actions/workflows/test.yml) [![MIT License](https://img.shields.io/badge/license-MIT-blue)](https://github.com/transitive-bullshit/replicate-api/blob/main/license) [![Prettier Code Formatting](https://img.shields.io/badge/code_style-prettier-brightgreen.svg)](https://prettier.io)
 
 - [Intro](#intro)
 - [Docs](#docs)

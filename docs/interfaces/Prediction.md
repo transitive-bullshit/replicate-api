@@ -6,7 +6,7 @@
 
 #### Defined in
 
-types.ts:11
+[types.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L11)
 
 ___
 
@@ -16,7 +16,7 @@ ___
 
 #### Defined in
 
-types.ts:12
+[types.ts:12](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L12)
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 #### Defined in
 
-types.ts:13
+[types.ts:13](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L13)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-types.ts:14
+[types.ts:14](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L14)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-types.ts:15
+[types.ts:15](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L15)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-types.ts:16
+[types.ts:16](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L16)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-types.ts:17
+[types.ts:17](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L17)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-types.ts:18
+[types.ts:18](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L18)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-types.ts:19
+[types.ts:19](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L19)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-types.ts:20
+[types.ts:20](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L20)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-types.ts:21
+[types.ts:21](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L21)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-types.ts:22
+[types.ts:22](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L22)
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-types.ts:23
+[types.ts:23](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L23)

@@ -12,7 +12,7 @@
 
 #### Defined in
 
-types.ts:80
+[types.ts:80](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L80)
 
 ___
 
@@ -22,7 +22,7 @@ ___
 
 #### Defined in
 
-types.ts:79
+[types.ts:79](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L79)
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 #### Defined in
 
-types.ts:81
+[types.ts:81](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L81)
