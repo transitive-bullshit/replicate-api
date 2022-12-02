@@ -6,13 +6,6 @@ import pTimeout from 'p-timeout'
 import * as types from './types'
 import * as utils from './utils'
 
-// TODO:
-// getPredictions
-// getModel
-// getModelVersions
-// getModelVersion
-// getModelCollection
-
 export class ReplicateAPI {
   protected _apiBaseUrl: string
   protected _headers: Record<string, string>
@@ -43,10 +36,67 @@ export class ReplicateAPI {
   }
 
   /**
+   * Fetches a list of model versions for a given model.
+   */
+  async getModelVersions(
+    modelId: string,
+    opts: {
+      cursor?: string
+    } = {}
+  ): Promise<types.Paginated<types.ModelVersion>> {
+    const { cursor } = opts
+
+    return this._get<types.Paginated<types.ModelVersion>>(
+      `/models/${modelId}/versions`,
+      {
+        searchParams: cursor ? { cursor } : undefined
+      }
+    )
+  }
+
+  /**
+   * Fetches a specific version of a model.
+   */
+  async getModelVersion(
+    modelId: string,
+    modelVersion
+  ): Promise<types.ModelVersion> {
+    return this._get<types.ModelVersion>(
+      `/models/${modelId}/versions/${modelVersion}`
+    )
+  }
+
+  /**
+   * Fetches a collection of models.
+   */
+  async getModelCollection(
+    modelCollectionSlug: string
+  ): Promise<types.ModelCollection> {
+    return this._get<types.ModelCollection>(
+      `/collections/${modelCollectionSlug}`
+    )
+  }
+
+  /**
    * Fetches a prediction.
    */
   async getPrediction(id: string): Promise<types.Prediction> {
     return this._get<types.Prediction>(`/predictions/${id}`)
+  }
+
+  /**
+   * Fetches a list of predictions.
+   */
+  async getPredictions(
+    opts: {
+      cursor?: string
+    } = {}
+  ): Promise<types.Paginated<types.Prediction>> {
+    const { cursor } = opts
+
+    return this._get<types.Paginated<types.Prediction>>(`/predictions`, {
+      searchParams: cursor ? { cursor } : undefined
+    })
   }
 
   /**
@@ -123,32 +173,36 @@ export class ReplicateAPI {
 
     const resolvedPredictionP = new Promise<types.Prediction>(
       async (resolve, reject) => {
-        do {
-          if (isCanceled) {
-            return reject(`prediction error ${id}: timeout ${ms(timeoutMs)}`)
-          }
+        try {
+          do {
+            if (isCanceled) {
+              return reject()
+            }
 
-          if (initialDelay || !isInitialRequest) {
-            // sleep longer if the model is still starting
-            const sleepDurationMs =
-              prediction?.status === 'starting'
-                ? Math.min(pollingIntervalMs * 10, 5000)
-                : pollingIntervalMs
+            if (initialDelay || !isInitialRequest) {
+              // sleep longer if the model is still starting
+              const sleepDurationMs =
+                prediction?.status === 'starting'
+                  ? Math.min(pollingIntervalMs * 10, 10000)
+                  : pollingIntervalMs
 
-            await delay(sleepDurationMs)
-          }
+              await delay(sleepDurationMs)
+            }
 
-          if (isCanceled) {
-            return reject(`prediction error ${id}: timeout ${ms(timeoutMs)}`)
-          }
+            if (isCanceled) {
+              return reject()
+            }
 
-          prediction = await this.getPrediction(id)
-          if (utils.isPredictionResolved(prediction)) {
-            return resolve(prediction)
-          }
+            prediction = await this.getPrediction(id)
+            if (utils.isPredictionResolved(prediction)) {
+              return resolve(prediction)
+            }
 
-          isInitialRequest = false
-        } while (true)
+            isInitialRequest = false
+          } while (true)
+        } catch (err) {
+          return reject(err)
+        }
       }
     )
 
@@ -174,10 +228,12 @@ export class ReplicateAPI {
    */
   async uploadData(
     data: GotOptions['body'],
-    opts?: Omit<GotOptions, 'body' | 'method'>
+    opts?: Partial<Omit<GotOptions, 'body' | 'method'>>
   ) {
     const upload = await this._post<types.Upload>('/upload/data.zip')
 
+    // TODO: test
+    // TODO: content-encoding: application/zip?
     await got(upload.upload_url, {
       method: 'PUT',
       body: data,
@@ -272,27 +328,31 @@ export class ReplicateAPI {
 
     const resolvedTrainingP = new Promise<types.Training>(
       async (resolve, reject) => {
-        do {
-          if (isCanceled) {
-            return reject(`training error ${id}: timeout ${ms(timeoutMs)}`)
-          }
+        try {
+          do {
+            if (isCanceled) {
+              return reject()
+            }
 
-          if (initialDelay || !isInitialRequest) {
-            await delay(pollingIntervalMs)
-          }
+            if (initialDelay || !isInitialRequest) {
+              await delay(pollingIntervalMs)
+            }
 
-          if (isCanceled) {
-            return reject(`training error ${id}: timeout ${ms(timeoutMs)}`)
-          }
+            if (isCanceled) {
+              return reject()
+            }
 
-          training = await this.getTraining(id)
-          if (utils.isTrainingResolved(training)) {
-            return resolve(training)
-          }
+            training = await this.getTraining(id)
+            if (utils.isTrainingResolved(training)) {
+              return resolve(training)
+            }
 
-          isInitialRequest = false
-          console.warn(`training pending ${id}: ${training.status}`)
-        } while (true)
+            isInitialRequest = false
+            console.warn(`training pending ${id}: ${training.status}`)
+          } while (true)
+        } catch (err) {
+          return reject(err)
+        }
       }
     )
 
@@ -306,10 +366,10 @@ export class ReplicateAPI {
     })
   }
 
-  protected _get<T>(pathname: string) {
+  protected _get<T>(pathname: string, opts?: any) {
     const url = `${this._apiBaseUrl}${pathname}`
     console.warn('GET', url)
-    return got(url, { headers: this._headers }).json<T>()
+    return got(url, { ...opts, headers: this._headers }).json<T>()
   }
 
   protected _post<T>(pathname: string, body?: any) {

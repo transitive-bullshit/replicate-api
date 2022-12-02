@@ -14,7 +14,7 @@ export interface Prediction {
   id: string
   input: PredictionInput
   logs: string | null
-  metrics: PredictionMetrics
+  metrics?: PredictionMetrics
   output: string[] | null
   started_at: string | null
   status: PredictionStatus
@@ -73,4 +73,17 @@ export interface TrainingInput {
   class_prompt: string
   instance_data: string
   max_train_steps: number
+}
+
+export interface Paginated<T> {
+  previous: string | null
+  next: string | null
+  results: T[]
+}
+
+export interface ModelCollection {
+  name: string
+  slug: string
+  description: string
+  models: Model[]
 }

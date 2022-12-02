@@ -62,7 +62,7 @@ ___
 
 ### metrics
 
-• **metrics**: [`PredictionMetrics`](PredictionMetrics.md)
+• `Optional` **metrics**: [`PredictionMetrics`](PredictionMetrics.md)
 
 #### Defined in
 

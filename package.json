@@ -1,9 +1,9 @@
 {
-  "name": "replicate-ai-api",
+  "name": "replicate-api",
   "version": "0.0.1",
-  "description": "TODO",
+  "description": "Node.js wrapper around Replicate's ML API (including dreambooth + stable diffusion).",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/replicate-ai-api",
+  "repository": "transitive-bullshit/replicate-api",
   "license": "MIT",
   "type": "module",
   "source": "./src/index.ts",
@@ -16,7 +16,7 @@
     "build"
   ],
   "engines": {
-    "node": ">=14"
+    "node": ">=14.16"
   },
   "scripts": {
     "build": "tsup",

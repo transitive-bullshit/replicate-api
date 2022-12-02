@@ -12,7 +12,7 @@
 
 #### Defined in
 
-replicate-api.ts:175
+replicate-api.ts:386
 
 ## Properties
 
@@ -22,4 +22,4 @@ replicate-api.ts:175
 
 #### Defined in
 
-replicate-api.ts:173
+replicate-api.ts:384

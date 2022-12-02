@@ -6,11 +6,16 @@
 ## Interfaces
 
 - [Model](interfaces/Model.md)
+- [ModelCollection](interfaces/ModelCollection.md)
 - [ModelVersion](interfaces/ModelVersion.md)
+- [Paginated](interfaces/Paginated.md)
 - [Prediction](interfaces/Prediction.md)
 - [PredictionInput](interfaces/PredictionInput.md)
 - [PredictionMetrics](interfaces/PredictionMetrics.md)
 - [PredictionUrls](interfaces/PredictionUrls.md)
+- [Training](interfaces/Training.md)
+- [TrainingInput](interfaces/TrainingInput.md)
+- [Upload](interfaces/Upload.md)
 
 ## Type Aliases
 
@@ -41,3 +46,23 @@ types.ts:3
 #### Defined in
 
 utils.ts:3
+
+___
+
+### isTrainingResolved
+
+▸ **isTrainingResolved**(`training`): `boolean`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `training` | [`Training`](interfaces/Training.md) |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+utils.ts:11
