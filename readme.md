@@ -6,6 +6,7 @@
 
 - [Intro](#intro)
 - [Docs](#docs)
+- [TODO](#todo)
 - [License](#license)
 
 ## Intro
@@ -17,6 +18,10 @@ https://replicate.com/docs/reference/http
 ## Docs
 
 See the [auto-generated docs](./docs/modules.md).
+
+## TODO
+
+- [ ] resolve diff btwn experimental API and prod API for training and upload data
 
 ## License
 
