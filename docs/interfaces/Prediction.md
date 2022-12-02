@@ -1,3 +1,25 @@
+[replicate-api](../readme.md) / [Exports](../modules.md) / Prediction
+
+# Interface: Prediction
+
+## Table of contents
+
+### Properties
+
+- [completed\_at](Prediction.md#completed_at)
+- [created\_at](Prediction.md#created_at)
+- [error](Prediction.md#error)
+- [id](Prediction.md#id)
+- [input](Prediction.md#input)
+- [logs](Prediction.md#logs)
+- [metrics](Prediction.md#metrics)
+- [output](Prediction.md#output)
+- [started\_at](Prediction.md#started_at)
+- [status](Prediction.md#status)
+- [urls](Prediction.md#urls)
+- [version](Prediction.md#version)
+- [webhook\_completed](Prediction.md#webhook_completed)
+
 ## Properties
 
 ### completed\_at
@@ -6,7 +28,7 @@
 
 #### Defined in
 
-[types.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L11)
+[types.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L11)
 
 ___
 
@@ -16,7 +38,7 @@ ___
 
 #### Defined in
 
-[types.ts:12](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L12)
+[types.ts:12](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L12)
 
 ___
 
@@ -26,7 +48,7 @@ ___
 
 #### Defined in
 
-[types.ts:13](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L13)
+[types.ts:13](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L13)
 
 ___
 
@@ -36,7 +58,7 @@ ___
 
 #### Defined in
 
-[types.ts:14](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L14)
+[types.ts:14](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L14)
 
 ___
 
@@ -46,7 +68,7 @@ ___
 
 #### Defined in
 
-[types.ts:15](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L15)
+[types.ts:15](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L15)
 
 ___
 
@@ -56,7 +78,7 @@ ___
 
 #### Defined in
 
-[types.ts:16](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L16)
+[types.ts:16](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L16)
 
 ___
 
@@ -66,7 +88,7 @@ ___
 
 #### Defined in
 
-[types.ts:17](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L17)
+[types.ts:17](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L17)
 
 ___
 
@@ -76,7 +98,7 @@ ___
 
 #### Defined in
 
-[types.ts:18](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L18)
+[types.ts:18](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L18)
 
 ___
 
@@ -86,7 +108,7 @@ ___
 
 #### Defined in
 
-[types.ts:19](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L19)
+[types.ts:19](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L19)
 
 ___
 
@@ -96,7 +118,7 @@ ___
 
 #### Defined in
 
-[types.ts:20](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L20)
+[types.ts:20](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L20)
 
 ___
 
@@ -106,7 +128,7 @@ ___
 
 #### Defined in
 
-[types.ts:21](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L21)
+[types.ts:21](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L21)
 
 ___
 
@@ -116,7 +138,7 @@ ___
 
 #### Defined in
 
-[types.ts:22](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L22)
+[types.ts:22](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L22)
 
 ___
 
@@ -126,4 +148,4 @@ ___
 
 #### Defined in
 
-[types.ts:23](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L23)
+[types.ts:23](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L23)

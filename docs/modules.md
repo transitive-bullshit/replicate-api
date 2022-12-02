@@ -1,9 +1,15 @@
-## Classes
+[replicate-api](readme.md) / Exports
+
+# replicate-api
+
+## Table of contents
+
+### Classes
 
 - [ReplicateAPI](classes/ReplicateAPI.md)
 - [ReplicateModel](classes/ReplicateModel.md)
 
-## Interfaces
+### Interfaces
 
 - [Model](interfaces/Model.md)
 - [ModelCollection](interfaces/ModelCollection.md)
@@ -17,6 +23,15 @@
 - [TrainingInput](interfaces/TrainingInput.md)
 - [Upload](interfaces/Upload.md)
 
+### Type Aliases
+
+- [PredictionStatus](modules.md#predictionstatus)
+
+### Functions
+
+- [isPredictionResolved](modules.md#ispredictionresolved)
+- [isTrainingResolved](modules.md#istrainingresolved)
+
 ## Type Aliases
 
 ### PredictionStatus
@@ -25,7 +40,7 @@
 
 #### Defined in
 
-[types.ts:3](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/types.ts#L3)
+[types.ts:3](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/types.ts#L3)
 
 ## Functions
 
@@ -45,7 +60,7 @@
 
 #### Defined in
 
-[utils.ts:3](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/utils.ts#L3)
+[utils.ts:3](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/utils.ts#L3)
 
 ___
 
@@ -65,4 +80,4 @@ ___
 
 #### Defined in
 
-[utils.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/0dee73c/src/utils.ts#L11)
+[utils.ts:11](https://github.com/transitive-bullshit/replicate-api/blob/a32ace3/src/utils.ts#L11)
