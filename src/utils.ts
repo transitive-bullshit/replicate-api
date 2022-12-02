@@ -7,3 +7,11 @@ export function isPredictionResolved(prediction: types.Prediction): boolean {
     prediction.status === 'canceled'
   )
 }
+
+export function isTrainingResolved(training: types.Training): boolean {
+  return (
+    training.status === 'succeeded' ||
+    training.status === 'failed' ||
+    training.status === 'canceled'
+  )
+}

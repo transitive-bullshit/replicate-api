@@ -1,7 +1,5 @@
-// import fs from 'node:fs/promises'
 import dotenv from 'dotenv-safe'
 
-import * as types from './types'
 import { ReplicateAPI } from './replicate-api'
 
 dotenv.config()
@@ -10,7 +8,13 @@ dotenv.config()
  * CLI for testing functionality.
  */
 async function main() {
-  const api = new ReplicateAPI()
+  const api = new ReplicateAPI({
+    // TODO...
+    apiBaseUrl: 'https://dreambooth-api-experimental.replicate.com/v1'
+  })
+
+  // const u = await api.uploadData()
+  // return u
 
   const modelVersion =
     'd17ae39e9381328f048ec447d2ab4daf8b6c7a87b820a212e15b6bb0f9ebde90'

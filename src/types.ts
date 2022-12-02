@@ -54,3 +54,23 @@ export interface ModelVersion {
   cog_version: string
   openapi_schema: OpenAPIV3_1.Document
 }
+
+export interface Upload {
+  upload_url: string
+  serving_url: string
+}
+
+export interface Training {
+  id: string
+  input: TrainingInput
+  model: string
+  status: string
+  webhook_completed: string
+}
+
+export interface TrainingInput {
+  instance_prompt: string
+  class_prompt: string
+  instance_data: string
+  max_train_steps: number
+}
