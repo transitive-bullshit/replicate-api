@@ -15,6 +15,17 @@ TODO
 
 https://replicate.com/docs/reference/http
 
+
+## Install
+
+```bash
+npm install --save replicate-api
+# or
+yarn add replicate-api
+# or
+pnpm add replicate-api
+```
+
 ## Docs
 
 See the [auto-generated docs](./docs/modules.md).

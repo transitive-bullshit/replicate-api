@@ -199,6 +199,7 @@ export class ReplicateAPI {
             }
 
             isInitialRequest = false
+            console.warn(`prediction ${id}: ${prediction.status}`)
           } while (true)
         } catch (err) {
           return reject(err)
@@ -348,7 +349,7 @@ export class ReplicateAPI {
             }
 
             isInitialRequest = false
-            console.warn(`training pending ${id}: ${training.status}`)
+            console.warn(`training session ${id}: ${training.status}`)
           } while (true)
         } catch (err) {
           return reject(err)

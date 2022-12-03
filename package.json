@@ -7,14 +7,13 @@
   "license": "MIT",
   "type": "module",
   "source": "./src/index.ts",
+  "types": "./build/index.d.ts",
   "exports": {
     "import": "./build/index.js",
     "default": "./build/index.js",
     "types": "./build/index.d.ts"
   },
-  "files": [
-    "build"
-  ],
+  "files": ["build"],
   "engines": {
     "node": ">=14.16"
   },
@@ -55,16 +54,12 @@
     "typescript": "^4.9.3"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "prettier --write"
-    ]
+    "*.{ts,tsx}": ["prettier --write"]
   },
   "ava": {
     "extensions": {
       "ts": "module"
     },
-    "nodeArguments": [
-      "--loader=tsx"
-    ]
+    "nodeArguments": ["--loader=tsx"]
   }
 }
